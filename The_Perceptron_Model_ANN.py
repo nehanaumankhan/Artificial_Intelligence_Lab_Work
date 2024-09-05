@@ -1,57 +1,39 @@
-# ANSI escape sequences for colors and bold text
-BOLD = '\033[1m'
-RED = '\033[91m'
-GREEN = '\033[92m'
-BLUE = '\033[94m'
-ENDC = '\033[0m'  # Resets to the default color
+def accumulator(inputs, weights, bias):
+    return sum([inputs[i] * weights[i] for i in range(len(inputs))]) + bias
 
-input_x1 = [0, 0, 1, 1]
-input_x2 = [0, 1, 0, 1]
-expected_output = [0, 1, 1, 1]
-
-weighted_sum = [0] * 4
-actual_output = [0] * 4
-difference = [1] * 4
-
-initial_weight_1 = [-0.3] * 4
-initial_weight_2 = [-0.5] * 4
-
-final_weight_1 = [0] * 4
-final_weight_2 = [0] * 4
-
-iterations = 0
-learning_rate = 0.2
-bias = 0
-
-print(f'{BOLD}{BLUE}\nTWO INPUTS PERCEPTRON MODEL{ENDC}')
-
-while sum(difference) and iterations < 10:
-    print(f'{BOLD}{GREEN}ITERATION {iterations+1}{ENDC}')
-    for i in range(4):
-        
-        # Accumulation
-        weighted_sum[i] = input_x1[i] * initial_weight_1[i] + input_x2[i] * initial_weight_2[i] + bias
-        
-        # Activation Function
-        actual_output[i] = 1 if weighted_sum[i] >= 0.5 else 0
-        
-        # Calculating difference
-        difference[i] = expected_output[i] - actual_output[i]
-        
-        # Updating weights
-        final_weight_1[i] = initial_weight_1[i] + learning_rate * difference[i] * input_x1[i]
-        final_weight_2[i] = initial_weight_2[i] + learning_rate * difference[i] * input_x2[i]
-        initial_weight_1[i] = round(final_weight_1[i], 4)
-        initial_weight_2[i] = round(final_weight_2[i], 4)
+def activation(weighted_sum, threshold):
+    return 1 if weighted_sum >= threshold else 0
     
-    print(f"{BOLD}{RED}difference:{ENDC}  {difference}")
-    print(f"{BOLD}{BLUE}W1:{ENDC} {initial_weight_1}")
-    print(f"{BOLD}{GREEN}W2:{ENDC} {initial_weight_2}")
-    print(f"{BOLD}{RED}actual_output:{ENDC}  {actual_output}\n")
-    
-    iterations += 1
+def difference(expected_output, model_output):
+    return expected_output - model_output
 
-print(f'{BOLD}{BLUE}Total iterations: {iterations}{ENDC}')
+def update_weights(weights, difference, inputs, learning_rate):
+    return [weights[i] + learning_rate * difference * inputs[i] for i in range(len(weights))]
 
+def perceptron(inputs, weights, expected_output, actual_model_output, threshold, bias, learning_rate):
+    for i in range(len(inputs)):
+        weighted_sum = accumulator(inputs[i], weights, bias)
+        model_output = activation(weighted_sum, threshold)
+        actual_model_output.append(model_output)
+        D = difference(expected_output[i], model_output)
+        if D != 0:
+            weights = update_weights(weights, D, inputs[i], learning_rate)
+    return actual_model_output, weights
 
+def train_model(inputs, expected_output, weights, threshold, bias, learning_rate):
+    iteration_counter = 0
+    actual_model_output = []
+    while actual_model_output != expected_output:
+        actual_model_output = []
+        #print(f'Iteration # {iteration_counter + 1}')
+        iteration_counter += 1
+        actual_model_output, weights = perceptron(inputs, weights, expected_output, actual_model_output, threshold, bias, learning_rate)
+        #print(f'Actual Model Output : {actual_model_output}, Expected Output : {expected_output}\n')
+    print(f'Number of Iterations : {iteration_counter}')
+    return inputs, expected_output, weights, threshold, bias, learning_rate
 
+train_model([[0, 0],[0, 1],[1, 0], [1, 1]], [1, 0, 0, 0], [0.9, 0.9], 0.5, 1, 0.2)
+train_model([[0, 0],[0, 1],[1, 0], [1, 1]], [1, 0, 0, 0], [0.1, 0.1], 0.5, 1, 0.2)
+train_model([[0, 0],[0, 1],[1, 0], [1, 1]], [1, 0, 0, 0], [0.5, 0.5], 0.5, 1, 0.2)
+train_model([[0, 0],[0, 1],[1, 0], [1, 1]], [1, 0, 0, 0], [0.9, 0.7], 0.5, 1, 0.2)
+train_model([[0, 0],[0, 1],[1, 0], [1, 1]], [1, 0, 0, 0], [-0.7, -0.8], 0.5, 1, 0.4)
