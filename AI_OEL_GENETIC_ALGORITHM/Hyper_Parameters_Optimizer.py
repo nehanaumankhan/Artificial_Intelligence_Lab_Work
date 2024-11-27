@@ -39,9 +39,7 @@ def create_model(neurons1, neurons2, lr):
         keras.layers.Dense(10, activation="softmax")  # 10 classes for digit classification
     ])
     
-    model.compile(optimizer=keras.optimizers.Adam(learning_rate=lr), 
-                  loss="sparse_categorical_crossentropy", 
-                  metrics=["accuracy"])
+    model.compile(optimizer=keras.optimizers.Adam(learning_rate=lr), loss="sparse_categorical_crossentropy", metrics=["accuracy"])
     return model
 
 
@@ -114,6 +112,9 @@ def genetic_algorithm(X_train, y_train, X_valid, y_valid, generations, pop_size,
     best_index = np.argmin(fitness_scores)
     # print(f"Final Best Accuracy (val_accuracy): {accuracy_scores[best_index]}")
     return population[best_index], best_loss, accuracy_scores[best_index]
+
+
+
 
 #  Run Genetic Algorithm
 best_hyperparameters, best_loss, best_accuracy = genetic_algorithm(
