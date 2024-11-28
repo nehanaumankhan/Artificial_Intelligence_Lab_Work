@@ -1,0 +1,82 @@
+
+(property scale 100)
+
+(vrl_instance qqiqbavb start [(= size {138 29}) (= selected 1)] 375 10 [(text 1 `start1` [(= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance ronjfugd question [(= question_type multiple_choice) (= size {188 53}) (= selected 3)] 350 58 [(text 1 `Weather` [(= visible 2) (= edited 1)]) (text 2 `How's the weather ?` [(= visible 2) (= edited 1)]) (text 3 `explanation` [(= visible 2)])])
+
+(vrl_instance tknspwvc expression [(= size {72 42}) (= selected 1)] 264 135 [(text 1 `=[Hot,Dry]` [(= fore vrl_valid) (= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance jqkiyoxh expression [(= size {91 24}) (= selected 1)] 399 132 [(text 1 ` =[Hot,Windy]` [(= fore vrl_valid) (= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance ztdrkzfh expression [(= size {108 30}) (= selected 1)] 534 129 [(text 1 ` =[Cold,wet]` [(= fore vrl_valid) (= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance ovughxuh end [(= size {86 46}) (= selected 1)] 245 205 [(text 1 `Don't Go` [(= visible 2) (= edited 1)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance vhtwacwm question [(= question_type single_choice) (= size {161 63}) (= selected 1)] 436 173 [(text 1 `Physical Limitation` [(= visible 2) (= edited 1)]) (text 2 `Do you have any physical limitation?` [(= visible 2) (= edited 1)]) (text 3 `explanation` [(= visible 2)])])
+
+(vrl_instance ujzlmgjq expression [(= size {85 29}) (= selected 1)] 570 286 [(text 1 ` No` [(= fore vrl_valid) (= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance emooosqt expression [(= size {88 27}) (= selected 1)] 400 275 [(text 1 ` yes` [(= fore vrl_valid) (= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance kzjengdb question [(= question_type single_choice) (= size {182 48}) (= selected 3)] 425 324 [(text 1 `Safe Time` [(= visible 2) (= edited 1)]) (text 2 `Is it safe time to go?` [(= visible 2) (= edited 1)]) (text 3 `explanation` [(= visible 2)])])
+
+(vrl_instance bwjwairc expression [(= size {72 24}) (= selected 1)] 588 384 [(text 1 ` Yes` [(= fore vrl_valid) (= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance tmrthjll expression [(= size {73 24}) (= selected 1)] 468 504 [(text 1 ` Moderate` [(= fore vrl_valid) (= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance bkqqvirx expression [(= size {79 24}) (= selected 1)] 621 504 [(text 1 ` Low` [(= fore vrl_valid) (= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance blligbtd expression [(= size {72 24}) (= selected 1)] 336 384 [(text 1 ` No` [(= fore vrl_valid) (= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance cweyjjvs question [(= question_type single_choice) (= size {221 45}) (= selected 1)] 394 422 [(text 1 `Energy Level` [(= visible 2) (= edited 1)]) (text 2 `What is your Energy level?` [(= visible 2) (= edited 1)]) (text 3 `explanation` [(= visible 2)])])
+
+(vrl_instance pcxvyhma expression [(= size {92 24}) (= selected 1)] 326 480 [(text 1 ` High` [(= fore vrl_valid) (= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance ypvvktkp end [(= size {101 24}) (= selected 1)] 322 528 [(text 1 `Go For Walk` [(= visible 2) (= edited 1)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance lfrlbfat end [(= size {86 24}) (= selected 1)] 461 540 [(text 1 `15-20 Min walk` [(= visible 2) (= edited 1)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance sgwjcapf end [(= size {96 25}) (= selected 1)] 612 540 [(text 1 `gentle stroll` [(= visible 2) (= edited 1)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance {ronjfugd tknspwvc} link [] ronjfugd tknspwvc [arrow line])
+
+(vrl_instance {ronjfugd ztdrkzfh} link [] ronjfugd ztdrkzfh [arrow line])
+
+(vrl_instance {ronjfugd jqkiyoxh} link [] ronjfugd jqkiyoxh [arrow line])
+
+(vrl_instance {qqiqbavb ronjfugd} link [] qqiqbavb ronjfugd [arrow line])
+
+(vrl_instance {tknspwvc ovughxuh} link [] tknspwvc ovughxuh [arrow line])
+
+(vrl_instance {vhtwacwm emooosqt} link [] vhtwacwm emooosqt [arrow line])
+
+(vrl_instance {vhtwacwm ujzlmgjq} link [] vhtwacwm ujzlmgjq [arrow line])
+
+(vrl_instance {ujzlmgjq kzjengdb} link [] ujzlmgjq kzjengdb [arrow line])
+
+(vrl_instance {jqkiyoxh vhtwacwm} link [] jqkiyoxh vhtwacwm [arrow line])
+
+(vrl_instance {ztdrkzfh vhtwacwm} link [] ztdrkzfh vhtwacwm [arrow line])
+
+(vrl_instance {emooosqt ovughxuh} link [] emooosqt ovughxuh [arrow line])
+
+(vrl_instance {blligbtd ovughxuh} link [] blligbtd ovughxuh [arrow line])
+
+(vrl_instance {kzjengdb bwjwairc} link [] kzjengdb bwjwairc [arrow line])
+
+(vrl_instance {kzjengdb blligbtd} link [] kzjengdb blligbtd [arrow line])
+
+(vrl_instance {bwjwairc cweyjjvs} link [] bwjwairc cweyjjvs [arrow line])
+
+(vrl_instance {cweyjjvs pcxvyhma} link [] cweyjjvs pcxvyhma [arrow line])
+
+(vrl_instance {cweyjjvs tmrthjll} link [] cweyjjvs tmrthjll [arrow line])
+
+(vrl_instance {cweyjjvs bkqqvirx} link [] cweyjjvs bkqqvirx [arrow line])
+
+(vrl_instance {bkqqvirx sgwjcapf} link [] bkqqvirx sgwjcapf [arrow line])
+
+(vrl_instance {tmrthjll lfrlbfat} link [] tmrthjll lfrlbfat [arrow line])
+
+(vrl_instance {pcxvyhma ypvvktkp} link [] pcxvyhma ypvvktkp [arrow line])
