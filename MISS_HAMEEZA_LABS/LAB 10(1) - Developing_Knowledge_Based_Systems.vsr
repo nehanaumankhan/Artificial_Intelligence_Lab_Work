@@ -1,0 +1,80 @@
+
+(property scale 100)
+
+(vrl_instance fmnpllax expression [(= size {74 24}) (= selected 1)] 299 288 [(text 1 ` Female` [(= fore vrl_valid) (= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance pmgipdlr question [(= question_type single_choice) (= size {134 69}) (= selected 1)] 269 338 [(text 1 `Film` [(= visible 2) (= edited 1)]) (text 2 `What film genre?` [(= visible 2) (= edited 1)]) (text 3 `explanation` [(= visible 2)])])
+
+(vrl_instance czyguavt question [(= question_type single_choice) (= size {123 74}) (= selected 2)] 431 335 [(text 1 `Food` [(= visible 2) (= edited 1)]) (text 2 `What food type?` [(= visible 2) (= edited 1)]) (text 3 `explanation` [(= visible 2)])])
+
+(vrl_instance lukmkbvy question [(= question_type single_choice) (= size {125 65}) (= selected 3)] 118 340 [(text 1 `Book` [(= visible 2) (= edited 1)]) (text 2 `What book genres?` [(= visible 2) (= edited 1)]) (text 3 `explanation` [(= visible 2)])])
+
+(vrl_instance sultqwql expression [(= size {72 24}) (= selected 1)] 180 288 [(text 1 ` Male` [(= fore vrl_valid) (= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance hhobwlou expression [(= size {72 24}) (= selected 1)] 408 288 [(text 1 ` Neutral` [(= fore vrl_valid) (= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance ihegcabl expression [(= size {72 24}) (= selected 1)] 264 432 [(text 1 `Action` [(= fore vrl_valid) (= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance skeuvelt expression [(= size {72 24}) (= selected 1)] 348 432 [(text 1 ` Romance` [(= fore vrl_valid) (= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance bkzcfmoj end [(= size {72 24}) (= selected 1)] 72 480 [(text 1 `Jokes Galo` [(= visible 2) (= edited 1)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance rpacdgtq end [(= size {72 28}) (= selected 1)] 168 478 [(text 1 `Mac Beth` [(= visible 2) (= edited 1)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance dgigmjaz end [(= size {72 24}) (= selected 1)] 264 480 [(text 1 `Die Hard` [(= visible 2) (= edited 1)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance cldumcxb end [(= size {72 24}) (= selected 1)] 348 480 [(text 1 `Love Story` [(= visible 2) (= edited 1)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance xqfufjxm end [(= size {72 24}) (= selected 1)] 444 480 [(text 1 `The Rej` [(= visible 2) (= edited 1)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance dlqunwiv end [(= size {77 24}) (= selected 1)] 526 480 [(text 1 `Vegan Del` [(= visible 2) (= edited 1)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance bcwkxjss expression [(= size {72 24}) (= selected 1)] 72 432 [(text 1 `Comedy` [(= fore vrl_valid) (= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance fqqohceb expression [(= size {72 27}) (= selected 1)] 168 431 [(text 1 ` Drama` [(= fore vrl_valid) (= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance ftyyzwrp expression [(= size {77 25}) (= selected 1)] 514 432 [(text 1 ` Salad` [(= fore vrl_valid) (= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance bwgnyjjs expression [(= size {72 24}) (= selected 1)] 432 432 [(text 1 ` Spicy` [(= fore vrl_valid) (= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance vzixwfbt start [(= size {100 24}) (= selected 1)] 286 144 [(text 1 `start1` [(= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance veqpwnev question [(= question_type single_choice) (= size {180 68}) (= selected 2)] 246 194 [(text 1 `Gender` [(= visible 2) (= edited 1)]) (text 2 `What gender is the applicant?` [(= visible 2) (= edited 1)]) (text 3 `explanation` [(= visible 2)])])
+
+(vrl_instance {vzixwfbt veqpwnev} link [] vzixwfbt veqpwnev [arrow line])
+
+(vrl_instance {veqpwnev sultqwql} link [] veqpwnev sultqwql [arrow line])
+
+(vrl_instance {veqpwnev fmnpllax} link [] veqpwnev fmnpllax [arrow line])
+
+(vrl_instance {veqpwnev hhobwlou} link [] veqpwnev hhobwlou [arrow line])
+
+(vrl_instance {sultqwql lukmkbvy} link [] sultqwql lukmkbvy [arrow line])
+
+(vrl_instance {fmnpllax pmgipdlr} link [] fmnpllax pmgipdlr [arrow line])
+
+(vrl_instance {hhobwlou czyguavt} link [] hhobwlou czyguavt [arrow line])
+
+(vrl_instance {bcwkxjss bkzcfmoj} link [] bcwkxjss bkzcfmoj [arrow line])
+
+(vrl_instance {lukmkbvy bcwkxjss} link [] lukmkbvy bcwkxjss [arrow line])
+
+(vrl_instance {lukmkbvy fqqohceb} link [] lukmkbvy fqqohceb [arrow line])
+
+(vrl_instance {pmgipdlr ihegcabl} link [] pmgipdlr ihegcabl [arrow line])
+
+(vrl_instance {pmgipdlr skeuvelt} link [] pmgipdlr skeuvelt [arrow line])
+
+(vrl_instance {czyguavt bwgnyjjs} link [] czyguavt bwgnyjjs [arrow line])
+
+(vrl_instance {czyguavt ftyyzwrp} link [] czyguavt ftyyzwrp [arrow line])
+
+(vrl_instance {ftyyzwrp dlqunwiv} link [] ftyyzwrp dlqunwiv [arrow line])
+
+(vrl_instance {bwgnyjjs xqfufjxm} link [] bwgnyjjs xqfufjxm [arrow line])
+
+(vrl_instance {skeuvelt cldumcxb} link [] skeuvelt cldumcxb [arrow line])
+
+(vrl_instance {ihegcabl dgigmjaz} link [] ihegcabl dgigmjaz [arrow line])
+
+(vrl_instance {fqqohceb rpacdgtq} link [] fqqohceb rpacdgtq [arrow line])

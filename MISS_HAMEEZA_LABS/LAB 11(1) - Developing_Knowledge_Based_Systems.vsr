@@ -1,0 +1,56 @@
+
+(property scale 100)
+
+(vrl_instance ixhskdlz start [(= size {72 36}) (= selected 1)] 348 18 [(text 1 `start1` [(= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance vvyrnzck question [(= question_type single_choice) (= size {72 60}) (= selected 1)] 348 78 [(text 1 `FullTime` [(= visible 2) (= edited 1)]) (text 2 `prompt` [(= visible 2)]) (text 3 `explanation` [(= visible 2)])])
+
+(vrl_instance ersiwtpm question [(= question_type single_choice) (= size {76 60}) (= selected 1)] 250 198 [(text 1 `Over3Years` [(= visible 2) (= edited 1)]) (text 2 `prompt` [(= visible 2)]) (text 3 `explanation` [(= visible 2)])])
+
+(vrl_instance uvvnxzsr question [(= question_type single_choice) (= size {80 61}) (= selected 2)] 440 198 [(text 1 `Over5Years` [(= visible 2) (= edited 1)]) (text 2 `prompt` [(= visible 2)]) (text 3 `explanation` [(= visible 2)])])
+
+(vrl_instance mxhuntlo end [(= size {72 58}) (= selected 1)] 204 319 [(text 1 `Grant Loan` [(= visible 2) (= edited 1)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance ympngmda end [(= size {72 58}) (= selected 1)] 288 319 [(text 1 `Unclear` [(= visible 2) (= edited 1)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance vztndetp end [(= size {72 58}) (= selected 1)] 396 319 [(text 1 `Unclear` [(= visible 2) (= edited 1)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance ztpgwsuh end [(= size {72 58}) (= selected 1)] 480 319 [(text 1 `No Loan` [(= visible 2) (= edited 1)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance jksacyqt expression [(= size {72 24}) (= selected 1)] 300 156 [(text 1 `? = yes` [(= fore vrl_valid) (= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance kyyipldl expression [(= size {72 24}) (= selected 1)] 408 156 [(text 1 `? =no` [(= fore vrl_valid) (= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance xhipezwk expression [(= size {72 24}) (= selected 1)] 204 276 [(text 1 `? = yes` [(= fore vrl_valid) (= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance ewfoqxga expression [(= size {72 24}) (= selected 1)] 288 276 [(text 1 `? = no` [(= fore vrl_valid) (= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance dbnmxhrl expression [(= size {72 24}) (= selected 1)] 396 276 [(text 1 `? = yes` [(= fore vrl_valid) (= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance dkewxcig expression [(= size {72 24}) (= selected 1)] 480 276 [(text 1 `? = no` [(= fore vrl_valid) (= visible 2)]) (text 2 ` ` [(= visible 2)]) (text 3 ` ` [(= visible 2)])])
+
+(vrl_instance {ixhskdlz vvyrnzck} link [] ixhskdlz vvyrnzck [arrow line])
+
+(vrl_instance {vvyrnzck jksacyqt} link [] vvyrnzck jksacyqt [arrow line])
+
+(vrl_instance {vvyrnzck kyyipldl} link [] vvyrnzck kyyipldl [arrow line])
+
+(vrl_instance {jksacyqt ersiwtpm} link [] jksacyqt ersiwtpm [arrow line])
+
+(vrl_instance {ersiwtpm xhipezwk} link [] ersiwtpm xhipezwk [arrow line])
+
+(vrl_instance {ersiwtpm ewfoqxga} link [] ersiwtpm ewfoqxga [arrow line])
+
+(vrl_instance {kyyipldl uvvnxzsr} link [] kyyipldl uvvnxzsr [arrow line])
+
+(vrl_instance {uvvnxzsr dbnmxhrl} link [] uvvnxzsr dbnmxhrl [arrow line])
+
+(vrl_instance {uvvnxzsr dkewxcig} link [] uvvnxzsr dkewxcig [arrow line])
+
+(vrl_instance {xhipezwk mxhuntlo} link [] xhipezwk mxhuntlo [arrow line])
+
+(vrl_instance {ewfoqxga ympngmda} link [] ewfoqxga ympngmda [arrow line])
+
+(vrl_instance {dbnmxhrl vztndetp} link [] dbnmxhrl vztndetp [arrow line])
+
+(vrl_instance {dkewxcig ztpgwsuh} link [] dkewxcig ztpgwsuh [arrow line])
