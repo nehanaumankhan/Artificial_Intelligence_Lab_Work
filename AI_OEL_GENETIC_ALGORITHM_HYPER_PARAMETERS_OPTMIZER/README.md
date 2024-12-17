@@ -31,7 +31,7 @@ We propose the use of Genetic Algorithms (GA) to efficiently search for the opti
 
 🎥 Watch the Project in Action
 To better understand the implementation and results of this project, check out the demonstration video below:
-[![Watch the Project in Action](thumbnail.png)](https://drive.google.com/file/d/1i_SXR8Ra58oc_6mq_VTDmn7m0dOpRm7j/view?usp=drive_link)
+[![Watch the Project in Action](thumbnail.png)](https://drive.google.com/file/d/19eez9GDE1oBpxL11fOT_uJRomOGqprZ3/view?usp=sharing)
 
 ---
 
