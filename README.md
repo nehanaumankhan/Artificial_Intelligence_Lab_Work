@@ -27,6 +27,9 @@ This repository includes the following topics explored through both lab sessions
 ### **Purpose**  
 This repository serves as a comprehensive collection of our hands-on experience with AI techniques, showcasing our progress and understanding of the subject. Each topic reflects the practical skills and problem-solving approaches we developed throughout the semester😊.
 Project Demonstration
+
+
+
 🎥 Watch the Project in Action
 To better understand the implementation and results of this project, check out the demonstration video below:
 https://drive.google.com/file/d/1i_SXR8Ra58oc_6mq_VTDmn7m0dOpRm7j/view?usp=drive_link
