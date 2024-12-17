@@ -27,6 +27,14 @@ We propose the use of Genetic Algorithms (GA) to efficiently search for the opti
 
 ---
 
+**Project Demonstration**
+
+🎥 Watch the Project in Action
+To better understand the implementation and results of this project, check out the demonstration video below:
+[![Watch the Project Demonstration](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://drive.google.com/file/d/1i_SXR8Ra58oc_6mq_VTDmn7m0dOpRm7j/view?usp=drive_link)
+
+---
+
 **Contributors**  
 - **Manahil Ejaz** (CS-22011)  
 - **Neha Nauman Khan** (CS-22024)  
